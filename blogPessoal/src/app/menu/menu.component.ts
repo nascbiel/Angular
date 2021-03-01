@@ -11,6 +11,7 @@ export class MenuComponent implements OnInit {
 
   nome = environment.nome
   foto = environment.foto
+  id = environment.id
 
 
   constructor(
@@ -22,13 +23,11 @@ export class MenuComponent implements OnInit {
 
   sair(){
     this.router.navigate(['/entrar'])
-
     environment.token = ''
     environment.nome = ''
     environment.foto = ''
     environment.usuario = ''
     environment.id = 0
-
   }
 
 }
