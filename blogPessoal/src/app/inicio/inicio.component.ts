@@ -35,7 +35,7 @@ export class InicioComponent implements OnInit {
     private router: Router,
     private postagemService: PostagemService,
     private temaService: TemaService,
-    private authService: AuthService,
+    public authService: AuthService,
     private alertas: AlertasService
   ) { }
 
@@ -99,13 +99,9 @@ export class InicioComponent implements OnInit {
         this.listaPostagens = resp
       })
     }
-
-    
   }
 
-
   findByNomeTema(){
-
     if(this.nomeTema == ''){
       this.getAllTemas()
     } else {
@@ -113,9 +109,5 @@ export class InicioComponent implements OnInit {
         this.listaTemas = resp
       })
     }
-
-   
   }
-
-
 }

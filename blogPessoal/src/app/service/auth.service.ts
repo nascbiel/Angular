@@ -33,7 +33,17 @@ export class AuthService {
     if(environment.token != ''){
       ok = true
     }
-
     return ok
   }
+
+  adm(){
+    let ok = false
+    
+    if(environment.tipo == 'adm'){
+      ok = true
+    }
+    return ok
+  }
+
+
 }
