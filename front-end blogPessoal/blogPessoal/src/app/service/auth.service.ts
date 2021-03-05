@@ -42,8 +42,9 @@ export class AuthService {
     if(environment.tipo == 'adm'){
       ok = true
     }
-    return ok
     
+    return ok
+
   }
 
 
